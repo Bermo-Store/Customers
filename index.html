@@ -3,17 +3,19 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="theme-color" content="#07172f">
+<meta name="theme-color" content="#0d4775">
 <title>BERMO STORE</title>
 <style>
-*{box-sizing:border-box}html,body{margin:0;padding:0;width:100%;height:100%;overflow:hidden;background:#07172f}body{height:100vh;height:100dvh}#app{display:block;width:100%;height:100%;height:100dvh;border:0;background:#07172f}#fallback{position:fixed;inset:0;display:flex;align-items:center;justify-content:center;padding:24px;text-align:center;color:#fff;font:16px Tahoma,Arial,sans-serif;background:#07172f;z-index:0;pointer-events:none}#app{position:relative;z-index:1}
-/* Mobile: zoom the embedded Apps Script interface out while preserving its full layout */
-@media (max-width: 600px){#app{width:125%;height:125%;height:125dvh;transform:scale(.8);transform-origin:top right}}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;width:100%;height:100%;min-height:100%;overflow:hidden;background:#f3f7fb}
+#app{display:block;position:fixed;inset:0;width:100%;height:100%;height:100dvh;border:0;background:#f3f7fb}
+#fallback{position:fixed;inset:0;display:flex;align-items:center;justify-content:center;padding:24px;text-align:center;color:#16324a;font:16px Tahoma,Arial,sans-serif;background:#f3f7fb;z-index:0}
+#app{z-index:1}
 </style>
 </head>
 <body>
 <div id="fallback">جارٍ فتح BERMO STORE…</div>
-<iframe id="app" title="BERMO STORE" allow="clipboard-read; clipboard-write; fullscreen" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe id="app" title="BERMO STORE" allow="clipboard-read; clipboard-write; fullscreen" allowfullscreen></iframe>
 <script>
 const APP_URL='https://script.google.com/macros/s/AKfycbwTIyM5GwW-2lXPT8RT6DmGHvUJABWnly8AitMVQQEUcsEztR0kSYMF0KhAs0LUzuid/exec';
 const frame=document.getElementById('app');
